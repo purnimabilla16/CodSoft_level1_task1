@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Great+Vibes&family=Outfit:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Great+Vibes&family=Josefin+Sans:wght@300&family=Outfit:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Great+Vibes&family=Josefin+Sans:wght@300&family=Outfit:wght@100&family=Roboto:wght@100&family=Signika+Negative:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fjalla+One&family=Great+Vibes&family=Josefin+Sans:wght@300&family=Outfit:wght@100&family=Roboto:wght@100&family=Signika+Negative:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            background: url("travel1.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .left {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h4 {
+            color: pink;
+            font-size: 30px;
+            font-family: 'Great Vibes', cursive;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        h4:hover {
+            cursor: pointer;
+            animation-name: headingcolor;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes headingcolor {
+            0% {
+                color: rgb(255, 0, 128);
+            }
+
+            25% {
+                color: pink;
+            }
+
+            50% {
+                color: rgb(255, 0, 128);
+            }
+
+            75% {
+                color: pink;
+            }
+
+            100% {
+                color: rgb(255, 0, 128);
+            }
+        }
+
+        .left img {
+            padding: 5px 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        #searchbar {
+            color: white;
+            background-color: #252525;
+            font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            left: 200px;
+            top: 15px;
+            width: 110px;
+            height: 20px;
+            border-radius: 10px;
+            padding-left: 10px;
+            border: 2px solid rgb(82, 83, 83);
+        }
+
+        #searchlogo {
+            position: relative;
+            left: 200px;
+            top: 3px;
+            width: 40px;
+            height: 40px;
+            filter: invert(100%);
+        }
+
+        a {
+            font-weight: bolder;
+            font-family: 'Outfit', sans-serif;
+            color: #dc81a7;
+            position: relative;
+            left: 220px;
+            margin: 20px 15px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #b3879a;
+            text-decoration: underline;
+        }
+
+        .heading {
+            height: 240px;
+            display: flex;
+        }
+
+        .item1 {
+            color: white;
+            position: relative;
+            top: 0px;
+            left: 220px;
+            width: 250px;
+            height: 170px;
+        }
+
+        .item2 {
+            color: white;
+            position: relative;
+            top: 0px;
+            left: 220px;
+            width: 50px;
+            height: 170px;
+        }
+
+        .heading img {
+            position: relative;
+            filter: invert(100%);
+            top: 70px;
+            left: 110px;
+        }
+
+        h1 {
+            color: #ade9d7;
+            font-size: 90px;
+            font-family: 'Fjalla One', sans-serif;
+            position: relative;
+            top: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #cfb4d1;
+            font-size: 23px;
+            font-family: 'Fjalla One', sans-serif;
+            position: relative;
+            top: 75px;
+            margin: 0px;
+            text-align: left;
+        }
+
+        .domain {
+            color: white;
+            height: 230px;
+        }
+
+        .query {
+            padding: 0px 250px;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .place {
+            font-size: 20px;
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 10px 20px;
+            text-align: center;
+        }
+
+        .place img {
+            border: 2px solid rgb(165, 153, 255);
+            position: relative;
+            top: 5px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .place img:hover {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: bordercolors;
+        }
+
+        @keyframes bordercolors {
+            0% {
+                border: 2px solid rgb(255, 69, 69);
+                box-shadow: 0px 0px 10px 10px rgb(255, 69, 69);
+            }
+
+            10% {
+                border: 2px solid rgb(138, 0, 0);
+                box-shadow: 0px 0px 10px 10px rgb(138, 0, 0);
+            }
+
+            20% {
+                border: 2px solid rgb(180, 0, 0);
+                box-shadow: 0px 0px 10px 10px rgb(180, 0, 0);
+            }
+
+            30% {
+                border: 2px solid rgb(235, 161, 161);
+                box-shadow: 0px 0px 10px 10px rgb(235, 161, 161);
+            }
+
+            40% {
+                border: 2px solid rgb(166, 27, 27);
+                box-shadow: 0px 0px 10px 10px rgb(166, 27, 27);
+            }
+
+            50% {
+                border: 2px solid rgb(214, 38, 38);
+                box-shadow: 0px 0px 10px 10px rgb(214, 38, 38);
+            }
+
+            60% {
+                border: 2px solid rgb(105, 44, 44);
+                box-shadow: 0px 0px 10px 10px rgb(105, 44, 44);
+            }
+
+            70% {
+                border: 2px solid rgb(208, 99, 99);
+                box-shadow: 0px 0px 10px 10px rgb(208, 99, 99);
+            }
+
+            80% {
+                border: 2px solid rgb(169, 41, 41);
+                box-shadow: 0px 0px 10px 10px rgb(169, 41, 41);
+            }
+
+            90% {
+                border: 2px solid rgb(224, 105, 105);
+                box-shadow: 0px 0px 10px 10px rgb(224, 105, 105);
+            }
+
+            100% {
+                border: 2px solid rgb(224, 114, 114);
+                box-shadow: 0px 0px 10px 10px rgb(224, 114, 114);
+            }
+        }
+
+        .ending {
+            height: 50px;
+        }
+
+        .ending input {
+            border: 2px solid rgb(151 106 106);
+            background-color: #fb1f1f;
+            border-radius: 6px;
+            position: relative;
+            top: 0px;
+            left: 240px;
+            width: 240px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .ending input:hover {
+            cursor: pointer;
+            background-color: #e64b4b;
+        }
+
+        h3 {
+            color: #00ddff;
+            font-size: 30px;
+            margin: 0px;
+            font-family: 'Ephesis', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+                <img src="flightlogo1.jpg" alt="Image not Found">
+                <h4>WanderLust</h4>
+                <div>
+                    <input type="text" name="searchbar" id="searchbar" placeholder="search...">
+                </div>
+                <div>
+                    <img src="searchh.png" id="searchlogo" alt="Image not Found">
+                </div>
+                <a href="#">DESTINATIONS</a>
+                <a href="#">EXPERIENCES</a>
+                <a href="#">TRIP FINDER</a>
+                <a href="#">MOST POPULAR</a>
+                <a href="#">ABOUT US</a>
+            </div>
+        </div>
+    </header>
+    <div class="heading">
+        <div class="item1">
+            <h1>TRAVEL</h1>
+        </div>
+        <div class="item2">
+            <h2>FAR</h2>
+            <h2>WIDE</h2>
+            <h2>DEEP</h2>
+        </div>
+        <img src="flight1.png" alt="Image not Found">
+    </div>
+    <div class="domain">
+        <div class="query">
+            <h3>What excites you the most?</h3>
+        </div>
+        <div class="places">
+            <div class="place">
+                <img src="mountain.jpg" alt="Image not Found">
+                <p>Mountain</p>
+            </div>
+            <div class="place">
+                <img src="desert.jpg" alt="Image not Found">
+                <p>Desert</p>
+            </div>
+            <div class="place">
+                <img src="beach.jpg" alt="Image not Found">
+                <p>Beach</p>
+            </div>
+            <div class="place">
+                <img src="aurora.jpg" alt="Image not Found">
+                <p>Aurora</p>
+            </div>
+        </div>
+    </div>
+    <div class="ending">
+        <input type="submit" value="Explore">
+    </div>
+</body>
+
+</html>
